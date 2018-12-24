@@ -43,7 +43,7 @@ const getName = t => filepath => {
   return t.isIdentifier(namedNode) ? namedNode.name : undefined;
 };
 
-export default t => (filepath, state) => {
+const getDisplayName = t => (filepath, state) => {
   const { file } = state;
   const componentName = getName(t)(filepath);
   if (file) {
@@ -57,3 +57,5 @@ export default t => (filepath, state) => {
 
   return componentName;
 };
+
+module.exports = getDisplayName;

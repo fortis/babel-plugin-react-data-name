@@ -1,6 +1,6 @@
 {
   "name": "babel-plugin-react-data-name",
-  "version": "0.0.1",
+  "version": "0.0.4",
   "description": "Babel plugin for adding React Component name as data attribute",
   "license": "MIT",
   "author": "Alan Bondarchuk <imacoda@gmail.com> (https://github.com/fortis)",
