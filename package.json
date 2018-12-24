@@ -1,0 +1,48 @@
+{
+  "name": "babel-plugin-react-data-name",
+  "version": "0.0.1",
+  "description": "Babel plugin for adding React Component name as data attribute",
+  "license": "MIT",
+  "author": "Alan Bondarchuk <imacoda@gmail.com> (https://github.com/fortis)",
+  "bugs": {
+    "url": "https://github.com/fortis/babel-plugin-react-data-name/issues"
+  },
+  "homepage": "https://github.com/fotis/babel-plugin-react-data-name#readme",
+  "main": "src/index.js",
+  "directories": {
+    "src": "src"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.3",
+    "babel-eslint": "^8.2.6",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-react": "^6.24.1",
+    "babel-preset-stage-0": "^6.24.1",
+    "eslint": "^4.19.1",
+    "eslint-config-airbnb": "^16.1.0",
+    "eslint-config-airbnb-base": "^12.1.0",
+    "eslint-config-prettier": "^2.10.0",
+    "eslint-plugin-import": "^2.14.0",
+    "eslint-plugin-jest": "^22.1.2",
+    "eslint-plugin-jsx-a11y": "^6.1.2",
+    "eslint-plugin-prettier": "^2.7.0",
+    "eslint-plugin-react": "^7.11.1",
+    "jest": "^22.4.4",
+    "lint-staged": "^6.1.1",
+    "prettier": "^1.15.3"
+  },
+  "scripts": {
+    "lint": "eslint src __tests__",
+    "precommit": "lint-staged && yarn lint",
+    "prettier": "prettier --write src/**/*.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fortis/babel-plugin-react-data-name.git"
+  },
+  "lint-staged": {
+    "*.{js,json,md}": ["prettier --write", "git add"]
+  }
+}
